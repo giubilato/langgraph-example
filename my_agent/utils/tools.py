@@ -1,3 +1,4 @@
-from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_exa import ExaSearchResults
 
-tools = [TavilySearchResults(max_results=1)]
+# Configura Exa. 
+tools = [ExaSearchResults(num_results=5, use_autoprompt=True)]
